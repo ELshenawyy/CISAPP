@@ -1,3 +1,4 @@
+import 'package:cis_team/board.dart';
 import 'package:cis_team/home.dart';
 import 'package:flutter/material.dart';
 
@@ -18,8 +19,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Home(),
+      home:  const Board(),
       debugShowCheckedModeBanner: false,
+    routes: {
+      'board': (context) => const Board(),
+    },
 
     );
   }
